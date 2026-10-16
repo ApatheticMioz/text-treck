@@ -1,0 +1,9 @@
+﻿metric,value,raw_score,notes
+Recall@5 (Hybrid W-RRF),100.00%,1.0,21/21 answerable queries retrieved gold intent in Top-5
+MRR@5 (Mean Reciprocal Rank @ 5),100.00%,1.0,Mean reciprocal rank of gold evidence within Top-5 candidates
+Citation Support Rate,100.00%,1.0,21/21 responses verified with valid DGI&P citation & semantic entailment
+Abstention Performance (Exact Guardrail Accuracy),100.00%,1.0,15/15 unanswerable queries routed to exact guardrail status
+Abstention Performance (F1 Score),100.00%,1.0,"Precision: 100.0%, Recall: 100.0%, False Abstentions: 0"
+Cross-Script Consistency (Benchmark Multi-Script),100.00%,1.0,3/3 multi-script benchmark intents retrieved identical evidence across UR/Roman-UR/EN
+Cross-Script Consistency (Full 150-Record Dataset),80.00%,0.8,24/30 canonical intents invariant across all script/spelling variations (123/130 queries)
+Mean End-to-End Latency (ms),3487.3 ms,3487.34,Median (P50): 2682.3 ms | P95: 8899.6 ms
