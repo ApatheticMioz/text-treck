@@ -1,4 +1,4 @@
-﻿Retriever Architecture,Answerable Top-1 Accuracy,Overall 36-Case Accuracy,Cross-Lingual Support,Typo/Phonetic Robustness
-Lexical BM25 Only (Content-Filtered),20/21 (95.2%),N/A (No OOD Router),Partial (Script-locked),Moderate (Requires Normalizer)
-Dense Only (BAAI/bge-m3 Cosine),21/21 (100.0%),N/A (False Positive OOD),High (100+ Languages),High
-Hybrid W-RRF (0.78 Dense + 0.22 BM25) + Agentic Router,21/21 (100.0%),36/36 (100.0%),"Full (UR, Roman-UR, EN)",Very High
+﻿Retriever Architecture,Top-1 Accuracy,Recall@5,MRR@5,Citation Support Rate,Abstention Performance (F1 / Exact),Cross-Script Consistency,Mean Latency (ms)
+Lexical BM25 Only (Content-Filtered),20/21 (95.2%),100.0%,97.6%,N/A (Retriever Only),N/A (No OOD Router),Partial (Script-Locked),< 5.0 ms (Retrieval Only)
+Dense Only (BAAI/bge-m3 Cosine),21/21 (100.0%),100.0%,100.0%,N/A (Retriever Only),N/A (No OOD Router),100.0%,~25.0 ms (Retrieval Only)
+Hybrid W-RRF (0.78 Dense + 0.22 BM25) + Agentic Router,21/21 (100.0%),100.0%,100.0%,100.0%,100.0% F1 (100.0% Exact),100.0% (Bench) / 80.0% (Full KB),3487.3 ms (E2E) | P95: 8899.6 ms
